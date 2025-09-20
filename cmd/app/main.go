@@ -17,4 +17,14 @@ func main() {
 	fmt.Printf("F(%d) = %d\n", n, valor)
 
 	fibonacci.PrintSequence(n)
+
+	fmt.Println("Função anônima: ")
+	multiplicacao := func(n1, n2 int) int{
+		return n1 * n2
+	}
+	fmt.Println("Quais números serão multiplicados")
+
+	n1:= 7 
+	n2:= 7
+	fmt.Printf("A multiplicação de %d x %d = %d", n1 , n2, multiplicacao(n1, n2))
 }
